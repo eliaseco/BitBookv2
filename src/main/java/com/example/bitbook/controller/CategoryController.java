@@ -1,6 +1,8 @@
-package com.example.bitbook;
+package com.example.bitbook.controller;
 import java.util.Optional;
 
+import com.example.bitbook.service.CategoryService;
+import com.example.bitbook.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,8 +1,8 @@
-package com.example.bitbook;
+package com.example.bitbook.model;
 
+import com.example.bitbook.model.Book;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data

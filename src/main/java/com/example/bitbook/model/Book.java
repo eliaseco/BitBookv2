@@ -1,8 +1,5 @@
-package com.example.bitbook;
-import jdk.jfr.DataAmount;
-import lombok.Data;
+package com.example.bitbook.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

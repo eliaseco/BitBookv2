@@ -1,4 +1,4 @@
-package com.example.bitbook;
+package com.example.bitbook.model;
 
 public class Review {
     private String author;
