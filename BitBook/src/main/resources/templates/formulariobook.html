@@ -1,0 +1,26 @@
+<form action="/book/new" method="post" enctype="multipart/form-data">
+    <h2>New Book</h2>
+    <div>
+        <label>Title: </label>
+        <input name="title" placeholder="title"/>
+    </div>
+    <div>
+        <label>Author: </label>
+        <textarea name="Author" placeholder="author"></textarea>
+    </div>
+
+    <p>Image: </p>
+    <input type='file' name='imageField' accept=".jpg, .jpeg" />
+
+    <p>Categorys: </p>
+
+    <select name="selectedCategorys" multiple>
+        {{#availableCategorys}}
+        <option value="{{ id }}">{{ name }}</option>
+        {{/availableCategorys}}
+    </select>
+    <p>
+        <button onclick="location.href='/'; return false;">Cancel</button>
+        <input type="submit" value="Save"/>
+    </p>
+</form>

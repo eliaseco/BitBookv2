@@ -1,0 +1,16 @@
+
+
+<div>
+    <h2>{{category.name}}</h2>
+
+
+    <h3>Books available in this category</h3>
+    <ul>
+        {{#category.books}}
+        <li>
+            <a href="/books/{{id}}">{{title}}</a>
+        </li>
+        {{/category.books}}
+    </ul>
+</div>
+

@@ -1,0 +1,34 @@
+
+<div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                {{#book.image}}
+                <img class="img-thumbnail" src="/books/{{book.id}}/image">
+                {{/book.image}}
+            </div>
+            <div class="col-10">
+                <h2>Book "{{book.title}}"</h2>
+
+                <div>
+                    <p>{{book.author}}</p>
+                </div>
+
+                <p> <b>Categorys where book is available:</b></p>
+                <div>
+                    <ul>
+                        {{#book.categorys}}
+                        <li><a href="/categorys/{{id}}">{{name}}</a></li>
+                        {{/book.categorys}}
+                    </ul>
+                </div>
+                <p>
+                    <button onclick="location.href='/'">Back to all books</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

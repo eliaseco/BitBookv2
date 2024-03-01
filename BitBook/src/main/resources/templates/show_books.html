@@ -1,0 +1,10 @@
+
+<h2>Books</h2>
+<ul class="items">
+    {{#books}}
+    <li><a href="/books/{{id}}">{{title}}</a></li>
+    {{/books}}
+</ul>
+
+<button onclick="location.href='/book/new'">New book</button>
+
